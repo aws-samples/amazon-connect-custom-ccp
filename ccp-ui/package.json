@@ -1,0 +1,38 @@
+{
+  "name": "custom ccp",
+  "version": "0.1.0",
+  "author": "Justine Jones",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "@awsui/components-react": "^3.0.154",
+    "@awsui/global-styles": "^1.0.8",
+    "amazon-connect-streams": "^1.6.6",
+    "aws-amplify": "^4.0.0",
+    "aws-amplify-react": "^4.2.33",
+    "aws-northstar": "^1.0.48",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-phone-input-2": "^2.14.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

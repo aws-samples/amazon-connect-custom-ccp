@@ -1,0 +1,15 @@
+{
+  "short_name": "Custom CCP",
+  "name": "Custom CCP",
+  "icons": [
+    {
+      "src": "phone.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

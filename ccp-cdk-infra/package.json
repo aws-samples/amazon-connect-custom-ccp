@@ -1,0 +1,34 @@
+{
+  "name": "cdk-deployment",
+  "version": "0.1.0",
+  "author": "Justine Jones",
+  "license": "MIT",
+  "bin": {
+    "cdk": "bin/cdk.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "bootstrap": "cdk bootstrap",
+    "diff": "cdk diff",
+    "deploy": "cdk deploy ccpStack"
+  },
+  "devDependencies": {
+    "aws-cdk": "^1.100.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.100.0",
+    "@aws-cdk/aws-cloudfront": "^1.100.0",
+    "@aws-cdk/aws-dynamodb": "^1.100.0",
+    "@aws-cdk/aws-iam": "^1.100.0",
+    "@aws-cdk/aws-lambda": "^1.100.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.106.0",
+    "@aws-cdk/aws-logs": "^1.100.0",
+    "@aws-cdk/aws-logs-destinations": "^1.100.0",
+    "@aws-cdk/aws-s3": "^1.100.0",
+    "@aws-cdk/aws-sqs": "^1.105.0",
+    "@aws-cdk/aws-ssm": "^1.100.0",
+    "@aws-cdk/core": "^1.100.0",
+    "aws-sdk": "^2.912.0"
+  }
+}
