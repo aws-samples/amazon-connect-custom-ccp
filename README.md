@@ -1,7 +1,26 @@
 ## Amazon Connect Custom CCP
 
-# AWS CDK stack to deploy Amazon connect CCP
-## Useful commands
+
+## Introduction
+
+amazon-connect-custom-ccp provides a way to build a custom ccp dashboard for your Amazon Connect contact center. These instructions focus on how to use the software to create a ccp dashboard. This dashboard will display: 
+
+- A banner to indicate if a call is priority. This is set by a field in the API response when an agent connects to a call.
+- A section with the queue name, broker code and account name. This can be changed to suit the needs of your project
+- A section that will contain a drop down to list the possible intents for a call based on a queue
+- Start/Stop/Pause/Resume functionality. (Using this functionality will add fields with timestamps for these actions on the contact trace record on Amazon connect)
+- A button that will open a stats modal. 
+- Stats modal displays daily call intent selections for the agent and daily queue stats (active agents, number of missed calls, number of customers in queue, longest wait time and average time in queue)
+- Cold transfer functionality (transfer to queue, quick connect or external number)
+
+First, you will need an Amazon Connect instance up and running. Next, you will need to deploy the CDK which will build the Lambda functions, DynamoDB table, API Gateway, S3 bucket, Cloudfront distribution and SQS queue components for you.
+
+The DynamoDB table holds data that will be displayed on the dashboard such as, a list of possible call intents, and intents selected by the agent during the call). You can also collect historical and real-time data from multiple Connect instances. If you wish to collect agent events from multiple Connect instances you will need to configure Kinesis to deliver the events to Lambda manually (which will be processed by the agent event handler). 
+The S3 bucket contains the React build and will be served from CloudFront.
+
+At the end of a call, when an agent selects an intent and a secondary intent. This information is added to the agent table in Dynamo DB and is updated on the contact trace record on Amazon Connect.
+
+## AWS CDK stack to deploy Amazon connect CCP
 
  Run `npm install` before running the commands below
 
