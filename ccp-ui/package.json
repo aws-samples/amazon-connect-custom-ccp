@@ -1,7 +1,7 @@
 {
   "name": "custom ccp",
   "version": "0.1.0",
-  "author": "Justine Jones",
+  "author": "AWS",
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
