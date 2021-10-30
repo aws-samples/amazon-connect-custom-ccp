@@ -21,8 +21,6 @@ The S3 bucket contains the React build and will be served from CloudFront.
 
 ## Architecture
 
-<img width="842" alt="architecture-connect-ccp" src="https://user-images.githubusercontent.com/7748458/139557741-592ceb1e-4764-4f33-b1ee-b1b222e78df5.png">
-
 
 ## AWS CDK stack to deploy Amazon connect CCP
 
