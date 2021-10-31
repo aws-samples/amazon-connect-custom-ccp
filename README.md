@@ -20,6 +20,7 @@ The DynamoDB table holds data that will be displayed on the dashboard such as, a
 The S3 bucket contains the React build and will be served from CloudFront.
 
 ## Architecture
+<img width="681" alt="Screen Shot 2021-10-30 at 6 00 28 PM" src="https://user-images.githubusercontent.com/7748458/139562557-443a6c64-ff8d-42e0-8b8e-a79fb5f186c7.png">
 
 
 ## AWS CDK stack to deploy Amazon connect CCP
