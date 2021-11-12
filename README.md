@@ -49,7 +49,7 @@ export AWS_PROFILE=<YOUR IAM USER PROFILE NAME>
 
 - Change the "company" value in the `project-config.json`
 
-- Add the Amazon connect instance ID as an SSM param in the correct region before running `npm run deploy`. This can be found on the edit queue page of the Amazon connect instance's dashboard, under additional queue information. The Amazon connect instance ID is a part of the ARN: arn:aws:connect:us-east-1:571591394325:instance/<instance_id>/queue/<queue_id>
+- Add the Amazon connect instance ID as an SSM param in the correct region before running `npm run deploy`. Use `connect-id` as the key and the connect Id as the value. The connect instance Id can be found on the edit queue page of the Amazon connect instance's dashboard, under additional queue information. The Amazon connect instance Id is a part of the ARN: arn:aws:connect:us-east-1:<account_id>:instance/<instance_id>/queue/<queue_id>
 
 ```
 $ cd ccp-cdk-infra
