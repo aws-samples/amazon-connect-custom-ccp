@@ -56,7 +56,8 @@ $ cd ccp-cdk-infra
 $ npm run bootstrap
 $ npm run deploy
 ```
-
+### UI
+<img width="1440" alt="Screen Shot 2022-06-30 at 3 10 46 PM" src="https://user-images.githubusercontent.com/7748458/176787375-672d2ec3-9958-4106-86e4-32a4afa10a16.png">
 
 
 ### Local Development
