@@ -10,9 +10,9 @@
   "dependencies": {
     "@awsui/components-react": "^3.0.154",
     "@awsui/global-styles": "^1.0.8",
-    "amazon-connect-streams": "^1.6.6",
-    "aws-amplify": "^4.0.0",
-    "aws-amplify-react": "^4.2.33",
+    "amazon-connect-streams": "^2.2.0",
+    "aws-amplify": "^4.3.26",
+    "aws-amplify-react": "^5.1.9",
     "aws-northstar": "^1.0.48",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
