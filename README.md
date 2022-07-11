@@ -58,10 +58,10 @@ $ npm run deploy
 ```
 
 **Adding additional stats**
+
 if you would like to add additional stats. You can do so by following the steps below:
 
 1. Create a new directory in the `ccp-cdk-infra/lib/lambdaCode` directory the directory name is the name of the lambda. Inside the directory add an index.js file. Ensure this function follows the other lambads in returning the `Access-Control-Allow-Origin` and `Access-Control-Allow-Credentials`
-
 
 2. Update the `dependsOnConnectPolicy` array in `ccp-stack.js` by adding the name of your new lambda.
 
