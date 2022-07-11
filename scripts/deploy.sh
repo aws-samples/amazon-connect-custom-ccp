@@ -79,7 +79,7 @@ CCP_DISTRIBUTION_ID=`aws ssm get-parameters --with-decryption --names "/custom-c
 echo "===> Invalidating cloud formation distribution: ${CCP_DISTRIBUTION_ID}"
 aws cloudfront create-invalidation \
     --distribution-id ${CCP_DISTRIBUTION_ID} \
-    --paths "/build"
+    --paths "/*"
 
 echo "===> Deployment is done."
 
