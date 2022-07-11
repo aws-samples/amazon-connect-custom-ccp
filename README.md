@@ -56,6 +56,18 @@ $ cd ccp-cdk-infra
 $ npm run bootstrap
 $ npm run deploy
 ```
+
+**Adding additional stats**
+if you would like to add additional stats. You can do so by following the steps below:
+
+1. Create a new directory in the `ccp-cdk-infra/lib/lambdaCode` directory the directory name is the name of the lambda. Inside the directory add an index.js file. Ensure this function follows the other lambads in returning the `Access-Control-Allow-Origin` and `Access-Control-Allow-Credentials`
+
+
+2. Update the `dependsOnConnectPolicy` array in `ccp-stack.js` by adding the name of your new lambda.
+
+3. Update the  `allresources`  array in `ccp-stack.js` for API Gateway by adding the following `{ Type: <method>, Name: <resource_name>, Lambda: <new_function_name> }`. Method should be an HTTP method.
+
+
 ### UI
 <img width="1440" alt="Screen Shot 2022-06-30 at 3 10 46 PM" src="https://user-images.githubusercontent.com/7748458/176787375-672d2ec3-9958-4106-86e4-32a4afa10a16.png">
 
