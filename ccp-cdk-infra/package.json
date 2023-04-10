@@ -29,6 +29,6 @@
     "@aws-cdk/aws-sqs": "^1.161.0",
     "@aws-cdk/aws-ssm": "^1.161.0",
     "@aws-cdk/core": "^1.161.0",
-    "aws-sdk": "^2.912.0"
+    "aws-sdk": "^2.1354.0"
   }
 }
